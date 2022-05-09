@@ -175,6 +175,52 @@ function MainScreen({ navigation }) {
             }}
           />
         </View>
+
+        <Text
+          style={{
+            marginTop: 20,
+            fontWeight: "bold",
+            fontSize: 20,
+            marginLeft: 10,
+          }}
+        >
+          Best Action Movies
+        </Text>
+
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            marginTop: 8,
+            flexWrap: 'wrap',
+            marginBottom: 30,
+          }}
+        >
+          <Image
+            source={require("./assets/endgame.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+            }}
+          />
+          <Image
+            source={require("./assets/superman.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+            }}
+          />
+          <Image
+            source={require("./assets/dark.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+              marginTop:30,
+            }}
+          />
+        </View>
+
       </ScrollView>
     </View>
   );

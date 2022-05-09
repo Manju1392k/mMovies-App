@@ -10,6 +10,8 @@ import {
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { AntDesign } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 function MainScreen({ navigation }) {
   return (
@@ -96,14 +98,30 @@ function SigupScreen({ navigation }) {
           </Text>
         </TouchableOpacity>
 
+        <Text style={{ marginTop: 30, textAlign: "center" }}>SignUp With</Text>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            marginTop: 30,
+          }}
+        >
+          <AntDesign name="google" size={30} color="black" />
+          <Entypo name="facebook-with-circle" size={30} color="black" />
+          <AntDesign name="twitter" size={30} color="black" />
+        </View>
+
         <View
           style={{
             flexDirection: "row",
             justifyContent: "center",
             marginTop: 30,
+            alignItems: "center",
           }}
         >
-          <TouchableOpacity onPress={() => navigation.navigate("MainScreen")}>
+          <Text style={{ marginRight: 20 }}>Or</Text>
+          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <Text
               style={{
                 backgroundColor: "#333",
@@ -127,7 +145,7 @@ function MyStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="SigUp" component={SigupScreen} />
-      <Stack.Screen name="MainScreen" component={MainScreen} />
+      <Stack.Screen name="Home" component={MainScreen} />
     </Stack.Navigator>
   );
 }

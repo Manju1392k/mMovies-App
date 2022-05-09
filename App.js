@@ -193,7 +193,7 @@ function MainScreen({ navigation }) {
             justifyContent: "space-around",
             alignItems: "center",
             marginTop: 8,
-            flexWrap: 'wrap',
+            flexWrap: "wrap",
             marginBottom: 30,
           }}
         >
@@ -216,11 +216,18 @@ function MainScreen({ navigation }) {
             style={{
               height: 200,
               borderRadius: 10,
-              marginTop:30,
+              marginTop: 30,
+            }}
+          />
+          <Image
+            source={require("./assets/drstrange.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+              marginTop: 30,
             }}
           />
         </View>
-
       </ScrollView>
     </View>
   );

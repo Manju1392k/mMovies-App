@@ -17,122 +17,165 @@ import { version } from "react-dom";
 function MainScreen({ navigation }) {
   return (
     <View style={{ flex: 1 }}>
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: 25,
-        }}
-      >
-        <Image
-          source={require("./assets/mainimage.jpg")}
-          style={{ width: 350, height: 150 }}
-        />
-      </View>
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-around",
-          alignItems: "center",
-          marginTop: 20,
-        }}
-      >
-        <Text
+      <ScrollView>
+        <View
           style={{
-            backgroundColor: "#000",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: 5,
-            paddingLeft: 12,
-            paddingRight: 12,
-            borderRadius: 4,
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: 25,
           }}
         >
-          All
-        </Text>
-        <Text
-          style={{
-            backgroundColor: "#000",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: 5,
-            paddingLeft: 12,
-            paddingRight: 12,
-            borderRadius: 4,
-          }}
-        >
-          Movies
-        </Text>
-        <Text
-          style={{
-            backgroundColor: "#000",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: 5,
-            paddingLeft: 12,
-            paddingRight: 12,
-            borderRadius: 4,
-          }}
-        >
-          Webseries
-        </Text>
-        <Text
-          style={{
-            backgroundColor: "#000",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: 5,
-            paddingLeft: 12,
-            paddingRight: 12,
-            borderRadius: 4,
-          }}
-        >
-          Action
-        </Text>
-        <Text
-          style={{
-            backgroundColor: "#000",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: 5,
-            paddingLeft: 12,
-            paddingRight: 12,
-            borderRadius: 4,
-          }}
-        >
-          Drama
-        </Text>
-      </View>
-
-      <Text
-        style={{
-          marginTop: 20,
-          fontWeight: "bold",
-          fontSize: 20,
-          marginLeft: 10,
-        }}
-      >
-        Marvel Movies
-      </Text>
-
-        <View style={{flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginTop:8}}>
           <Image
-          source={require('./assets/endgame.jpg')}
+            source={require("./assets/mainimage.jpg")}
+            style={{ width: 350, height: 150 }}
+          />
+        </View>
+        <View
           style={{
-            height:200,
-            borderRadius:10,
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            marginTop: 20,
           }}
+        >
+          <Text
+            style={{
+              backgroundColor: "#000",
+              color: "#fff",
+              fontWeight: "bold",
+              padding: 5,
+              paddingLeft: 12,
+              paddingRight: 12,
+              borderRadius: 4,
+            }}
+          >
+            All
+          </Text>
+          <Text
+            style={{
+              backgroundColor: "#000",
+              color: "#fff",
+              fontWeight: "bold",
+              padding: 5,
+              paddingLeft: 12,
+              paddingRight: 12,
+              borderRadius: 4,
+            }}
+          >
+            Movies
+          </Text>
+          <Text
+            style={{
+              backgroundColor: "#000",
+              color: "#fff",
+              fontWeight: "bold",
+              padding: 5,
+              paddingLeft: 12,
+              paddingRight: 12,
+              borderRadius: 4,
+            }}
+          >
+            Webseries
+          </Text>
+          <Text
+            style={{
+              backgroundColor: "#000",
+              color: "#fff",
+              fontWeight: "bold",
+              padding: 5,
+              paddingLeft: 12,
+              paddingRight: 12,
+              borderRadius: 4,
+            }}
+          >
+            Action
+          </Text>
+          <Text
+            style={{
+              backgroundColor: "#000",
+              color: "#fff",
+              fontWeight: "bold",
+              padding: 5,
+              paddingLeft: 12,
+              paddingRight: 12,
+              borderRadius: 4,
+            }}
+          >
+            Drama
+          </Text>
+        </View>
+
+        <Text
+          style={{
+            marginTop: 20,
+            fontWeight: "bold",
+            fontSize: 20,
+            marginLeft: 10,
+          }}
+        >
+          Marvel Movies
+        </Text>
+
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            marginTop: 8,
+          }}
+        >
+          <Image
+            source={require("./assets/endgame.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+            }}
           />
           <Image
-          source={require('./assets/drstrange.jpg')}
-          style={{
-            height:200,
-            borderRadius:10,
-          }}
+            source={require("./assets/drstrange.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+            }}
           />
         </View>
 
+        <Text
+          style={{
+            marginTop: 20,
+            fontWeight: "bold",
+            fontSize: 20,
+            marginLeft: 10,
+          }}
+        >
+          DC Movies
+        </Text>
+
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            marginTop: 8,
+          }}
+        >
+          <Image
+            source={require("./assets/dark.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+            }}
+          />
+          <Image
+            source={require("./assets/superman.jpg")}
+            style={{
+              height: 200,
+              borderRadius: 10,
+            }}
+          />
+        </View>
+      </ScrollView>
     </View>
   );
 }

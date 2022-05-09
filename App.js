@@ -38,12 +38,83 @@ function MainScreen({ navigation }) {
           marginTop: 20,
         }}
       >
-        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>All</Text>
-        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Movies</Text>
-        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Webseries</Text>
-        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Action</Text>
-        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Drama</Text>
+        <Text
+          style={{
+            backgroundColor: "#000",
+            color: "#fff",
+            fontWeight: "bold",
+            padding: 5,
+            paddingLeft: 12,
+            paddingRight: 12,
+            borderRadius: 4,
+          }}
+        >
+          All
+        </Text>
+        <Text
+          style={{
+            backgroundColor: "#000",
+            color: "#fff",
+            fontWeight: "bold",
+            padding: 5,
+            paddingLeft: 12,
+            paddingRight: 12,
+            borderRadius: 4,
+          }}
+        >
+          Movies
+        </Text>
+        <Text
+          style={{
+            backgroundColor: "#000",
+            color: "#fff",
+            fontWeight: "bold",
+            padding: 5,
+            paddingLeft: 12,
+            paddingRight: 12,
+            borderRadius: 4,
+          }}
+        >
+          Webseries
+        </Text>
+        <Text
+          style={{
+            backgroundColor: "#000",
+            color: "#fff",
+            fontWeight: "bold",
+            padding: 5,
+            paddingLeft: 12,
+            paddingRight: 12,
+            borderRadius: 4,
+          }}
+        >
+          Action
+        </Text>
+        <Text
+          style={{
+            backgroundColor: "#000",
+            color: "#fff",
+            fontWeight: "bold",
+            padding: 5,
+            paddingLeft: 12,
+            paddingRight: 12,
+            borderRadius: 4,
+          }}
+        >
+          Drama
+        </Text>
       </View>
+
+      <Text
+        style={{
+          marginTop: 20,
+          fontWeight: "bold",
+          fontSize: 20,
+          marginLeft: 10,
+        }}
+      >
+        Marvel Movies
+      </Text>
     </View>
   );
 }

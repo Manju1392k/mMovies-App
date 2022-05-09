@@ -12,12 +12,25 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import { version } from "react-dom";
 
 function MainScreen({ navigation }) {
   return (
-    <View
-      style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
-    ></View>
+    <View style={{ flex: 1 }}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: 25,
+        }}
+      >
+        <Image
+          source={require("./assets/mainimage.jpg")}
+          style={{ width: 350, height: 150 }}
+        />
+      </View>
+    </View>
   );
 }
 

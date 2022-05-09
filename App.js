@@ -30,6 +30,20 @@ function MainScreen({ navigation }) {
           style={{ width: 350, height: 150 }}
         />
       </View>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-around",
+          alignItems: "center",
+          marginTop: 20,
+        }}
+      >
+        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>All</Text>
+        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Movies</Text>
+        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Webseries</Text>
+        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Action</Text>
+        <Text style={{backgroundColor: '#000', color: '#fff', fontWeight: 'bold', padding: 5, paddingLeft:12,paddingRight:12, borderRadius:4}}>Drama</Text>
+      </View>
     </View>
   );
 }

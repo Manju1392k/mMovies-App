@@ -115,6 +115,24 @@ function MainScreen({ navigation }) {
       >
         Marvel Movies
       </Text>
+
+        <View style={{flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginTop:8}}>
+          <Image
+          source={require('./assets/endgame.jpg')}
+          style={{
+            height:200,
+            borderRadius:10,
+          }}
+          />
+          <Image
+          source={require('./assets/drstrange.jpg')}
+          style={{
+            height:200,
+            borderRadius:10,
+          }}
+          />
+        </View>
+
     </View>
   );
 }

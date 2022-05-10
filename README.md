@@ -87,7 +87,7 @@ The Table Framework is used in this project. To run This Project. This framework
 # 👨‍💻 Command for Execute Project
 
 ```bash
-npm run android
+expo start --android
 ```
 
 ---

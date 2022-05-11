@@ -3,6 +3,7 @@
 * ### mMovies is a Application for Watching Latest Movies. 📽️
 * ### mMovies is a Mini ott Platform. 🎞️
 * ### User Can Watch Movies in mMovies 🍿
+* ### The Frontend part is completed.
 
 ---
 
